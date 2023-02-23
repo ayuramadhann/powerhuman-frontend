@@ -40,28 +40,5 @@ export default{
       }
     }
   },
-  methods: {
-    async userRegister() {
-        try {
-            let response = await this.$axios.post('/register', this.register)
-            try {
-                let login = await this.$auth.loginWith('local', { 
-                    data: {
-                        email: this.register.email,
-                        password: this.register.password,
-                    }
-                })
-                console.log(login)
-            } catch (err) {
-                console.log(err)
-            }
-
-            console.log(response);
-        } catch (error) {
-            
-        }
-      
-    }
-  }
 }
 </script>
