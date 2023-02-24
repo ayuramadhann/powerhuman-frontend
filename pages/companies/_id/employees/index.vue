@@ -22,7 +22,7 @@
                 </form>
                 <a href="#"
                     class="flex-none w-[46px] h-[46px] bg-white rounded-full p-[11px] relative notification-dot">
-                    <img src="assets/svgs/ic-bell.svg" alt="">
+                    <img src="/assets/svgs/ic-bell.svg" alt="">
                 </a>
             </div>
         </section>
@@ -92,7 +92,7 @@
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-f-1.png" width="70" alt="">
+                    <img src="/assets/images/user-f-1.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Andini Danna
                     </div>
@@ -100,13 +100,13 @@
                         Product Designer
                     </p>
                     <div class="mt-[30px] text-success flex items-center gap-[6px]">
-                        <img src="assets//svgs/ic-check-circle.svg" alt="">
+                        <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
                 </div>
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-m-1.png" width="70" alt="">
+                    <img src="/assets/images/user-m-1.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Ferrari Three
                     </div>
@@ -114,14 +114,14 @@
                         Quality Manager
                     </p>
                     <div class="mt-[30px] text-success flex items-center gap-[6px]">
-                        <img src="assets//svgs/ic-check-circle.svg" alt="">
+                        <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-m-2.png" width="70" alt="">
+                    <img src="/assets/images/user-m-2.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Sapiire Muke
                     </div>
@@ -135,7 +135,7 @@
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-f-2.png" width="70" alt="">
+                    <img src="/assets/images/user-f-2.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Mw Kemanna
                     </div>
@@ -143,14 +143,14 @@
                         Website Developer
                     </p>
                     <div class="mt-[30px] text-success flex items-center gap-[6px]">
-                        <img src="assets//svgs/ic-check-circle.svg" alt="">
+                        <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-m-3.png" width="70" alt="">
+                    <img src="/assets/images/user-m-3.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Onna Appa
                     </div>
@@ -158,14 +158,14 @@
                         Product Designer
                     </p>
                     <div class="mt-[30px] text-success flex items-center gap-[6px]">
-                        <img src="assets//svgs/ic-check-circle.svg" alt="">
+                        <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-f-3.png" width="70" alt="">
+                    <img src="/assets/images/user-f-3.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Hehe Nadiia
                     </div>
@@ -173,14 +173,14 @@
                         Quality Manager
                     </p>
                     <div class="mt-[30px] text-success flex items-center gap-[6px]">
-                        <img src="assets//svgs/ic-check-circle.svg" alt="">
+                        <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-m-4.png" width="70" alt="">
+                    <img src="/assets/images/user-m-4.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Jamboel
                     </div>
@@ -194,7 +194,7 @@
                 <!-- Card -->
                 <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
-                    <img src="assets/images/user-f-4.png" width="70" alt="">
+                    <img src="/assets/images/user-f-4.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
                         Eksis Melita
                     </div>
@@ -202,7 +202,7 @@
                         Website Developer
                     </p>
                     <div class="mt-[30px] text-success flex items-center gap-[6px]">
-                        <img src="assets//svgs/ic-check-circle.svg" alt="">
+                        <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
                 </div>
@@ -213,6 +213,7 @@
 </template>
 <script>
   export default {
+    middleware: 'auth',
     layout: 'dashboard'
   }
 </script>

@@ -109,6 +109,7 @@
 
 <script>
   export default {
+    middleware: 'auth',
     layout: 'dashboard'
   }
 </script>

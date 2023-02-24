@@ -96,6 +96,7 @@
 </template>
 <script>
 export default {
-  layout: 'form'
+  middleware: 'auth',
+  layout: 'form' 
 }
 </script>
