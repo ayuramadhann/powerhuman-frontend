@@ -3,9 +3,9 @@
   <div class="hidden lg:block fixed lg:max-w-[295px] w-full overflow-y-auto h-full bg-white z-[999]" id="sidebarHRIS">
       <div class="px-6 py-[50px] gap-y-[50px] flex flex-col">
         <div class="flex items-center justify-between">
-          <a href="#" class="flex justify-center">
+          <NuxtLink :to="{name:'companies-id'}" class="flex justify-center">
             <img src="/assets/svgs/logo-type.svg" alt="">
-          </a>
+          </NuxtLink>
           <a href="#" id="toggleCloseSidebar" class="lg:hidden">
             <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
@@ -51,10 +51,10 @@
             <img src="/assets/svgs/ic-settings.svg" alt="">
             Settings
           </NuxtLink>
-          <NuxtLink :to="{name:'index'}" href="#" class="nav-link">
+          <button @click="$auth.logout()" class="nav-link">
             <img src="/assets/svgs/ic-signout.svg" alt="">
             Logout
-          </NuxtLink>
+          </button>
         </div>
       </div>
     </div>

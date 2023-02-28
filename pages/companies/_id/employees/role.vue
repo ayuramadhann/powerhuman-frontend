@@ -11,19 +11,22 @@
             <div class="flex flex-col items-center mb-[14px]">
                 <img src="/assets/images/user-f-1.png" width="70" alt="">
                 <div class="mt-6 mb-1 text-lg font-semibold">
-                    Andini Danna
+                {{ this.$store.state.employees.name }}
                 </div>
                 <p class="text-base text-grey">
-                    ke@manasihhbang.com
+                {{ this.$store.state.employees.email }}
                 </p>
             </div>
             <div class="form-group">
                 <label for="" class="text-grey">Select Role</label>
+                <p v-if="$fetchState.pending" >Fetching roles...</p>
+<!-- 
+                <select v-else  name="roles" :value="role_id" @change="updateRoleId" id="" class="appearance-none input-field form-icon-chevron_down">
+                    <option :value="role.id" v-for="role in roles.data.result.data" value="">{{role.name}}</option>
+                </select> -->
+
                 <select name="" id="" class="appearance-none input-field form-icon-chevron_down">
                     <option value="" selected>Product Designer</option>
-                    <option value="">Website Developer</option>
-                    <option value="">Executive Manager</option>
-                    <option value="">iOS Engineer</option>
                 </select>
             </div>
 
@@ -32,42 +35,63 @@
                 <label for="" class="text-grey">
                     Responsibilities
                 </label>
-                <div class="flex flex-col gap-4 mt-[10px]">
-                    <div class="flex items-start md:items-center gap-[6px]">
+                <!-- <div class="flex flex-col gap-4 mt-[10px]">
+                <p v-if="$fetchState.pending" >Fetching responsibility...</p>
+                    <div v-else v-for="responsibility in responsibilities" class="flex items-start md:items-center gap-[6px]">
                         <img src="/assets/svgs/ic-check-circle.svg" alt="">
                         <span class="text-sm text-dark">
-                            Lorem ipsum tanggung jawab pixel studio website
+                            {{ responsibility.name }}
                         </span>
                     </div>
-                    <div class="flex items-start md:items-center gap-[6px]">
-                        <img src="/assets/svgs/ic-check-circle.svg" alt="">
-                        <span class="text-sm text-dark">
-                            Growth strategy studio make things better again with
-                        </span>
-                    </div>
-                    <div class="flex items-start md:items-center gap-[6px]">
-                        <img src="/assets/svgs/ic-check-circle.svg" alt="">
-                        <span class="text-sm text-dark">
-                            Menyediakan beberapa kit untuk kebutuhan
-                        </span>
-                    </div>
-                    <div class="flex items-start md:items-center gap-[6px]">
-                        <img src="/assets/svgs/ic-check-circle.svg" alt="">
-                        <span class="text-sm text-dark">
-                            Bekerja sama dengan designer dan developer tim
-                        </span>
-                    </div>
-                </div>
+                </div> -->
             </section>
-            <a href="employee_add-to-team.html" class="w-full btn btn-primary mt-[14px]">
-                Continue
-            </a>
+            <NuxtLink :to="{name:'companies-id-employees-team'}" class="w-full btn btn-primary mt-[14px]">
+        Continue
+      </NuxtLink>
         </form>
     </section>
 </template>
 <script>
 export default {
-  middleware: 'auth',
-  layout: 'form'
+//   middleware: 'auth',
+  layout: 'form',
+   data() {
+        return {
+            roles: [],
+            responsibilities:[],
+            selectedCompany:''
+        }
+    },
+    async fetch(){
+        this.roles = await this.$axios.get('/role',{
+            params:{
+                company_id: this.$route.params.id,
+                limit: 100
+            }
+        })
+    },
+    computed:{
+        role_id(){
+            return this.$store.state.employees.role_id
+        }
+    },
+    methods:{
+        fetchResponsibilities(){
+            this.$axios.get('/responsibility',{
+                params:{
+                    role_id: this.$store.state.employees.role_id,
+                    limit: 100
+                }
+            })
+            .then(({data}) => {
+                this.responsibilities = data.result.dataa
+            })
+        },
+        updateRoleId(event){
+            this.$store.commit('employees/updateRoleId', event.target.value)
+            this.$store.commit('employees/updateRoleName', event.target.options[event.target.selectedIndex].text)
+            this.fetchResponsibilities
+        }
+    }
 }
 </script>
