@@ -42,7 +42,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-                <!-- <p v-if="$fetchState.pending" >Fetching roles...</p>
+                <p v-if="$fetchState.pending" >Fetching roles...</p>
                 <div v-else class="items-center card !flex-row gap-4"
                 v-for="role in roles.data.result.data">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
@@ -55,8 +55,8 @@
                             {{ role.responsibilities_count }} responsibilities
                         </p>
                     </div>
-                </div> -->
-                <div class="items-center card !flex-row gap-4">
+                </div>
+                <!-- <div class="items-center card !flex-row gap-4">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
                     <img src="/coresassets/svgs/ric-flag.svg" alt="">
                     <div>
@@ -67,7 +67,7 @@
                             12 people assigned
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </div>
@@ -75,7 +75,7 @@
 
 <script>
   export default {
-    // middleware: 'auth',
+    middleware: 'auth',
     layout: 'dashboard',
     data(){
         return{

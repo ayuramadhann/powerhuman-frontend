@@ -36,7 +36,7 @@
 
 <script>
 export default{
-//   auth: 'auth',
+  auth: 'auth',
   layout:'dashboard',
   data(){
     return {

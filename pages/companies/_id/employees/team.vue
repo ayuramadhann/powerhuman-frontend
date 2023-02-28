@@ -41,7 +41,7 @@
       <form>
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:gap-10 lg:gap-3 mb-[50px]">
 
-          <!-- <p v-if="$fetchState.pending">Fetching teams...</p>
+          <p v-if="$fetchState.pending">Fetching teams...</p>
           <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0" v-else
             v-for="team in teams.data.result.data">
             <input type="radio" name="team_id" id="productGrowth" :value="team.id" @click="updateTeamId" class="
@@ -57,9 +57,9 @@
               {{ team.name }}
             </div>
             <p class="text-center text-grey">{{ team.employees_count }} People</p>
-          </div> -->
+          </div>
 
-          <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
+          <!-- <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
             <input type="radio" name="productGrowth" id="productGrowth"
               class="absolute inset-0 checked:ring-2 ring-primary rounded-[26px] appearance-none">
             <img src="/assets/svgs/ric-box.svg" alt="">
@@ -69,7 +69,7 @@
             <p class="text-center text-grey">
               810 People
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="flex justify-center">
           <button @click="createEmployee()" type="button" id="continueBtn" class="hidden btn btn-primary">
@@ -82,7 +82,7 @@
 </template>
 <script>
   export default {
-    //   middleware: 'auth',
+      middleware: 'auth',
     layout: 'form',
     data() {
       return {

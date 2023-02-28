@@ -36,7 +36,7 @@
 
 <script>
   export default {
-    // middleware: 'auth',
+    middleware: 'auth',
     layout: 'form',
     computed: {
       name() {

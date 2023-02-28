@@ -16,7 +16,7 @@
 </template>
 <script>
 export default{
-  // auth: 'auth',
+  auth: 'auth',
   data(){
     return {
       company:{

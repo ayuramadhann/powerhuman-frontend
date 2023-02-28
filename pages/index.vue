@@ -13,12 +13,12 @@
           id=""
           class="appearance-none input-field form-icon-chevron_down"
         >
-        <!-- <option :value="companies.id" v-for="companies in company.data.result.data">
+        <option :value="companies.id" v-for="companies in company.data.result.data">
             {{ companies.name }}
-          </option> -->
-          <option >
-            
           </option>
+          <!-- <option >
+            
+          </option> -->
         </select>
       </div>
       <button @click="getCompany()" type="button" class="w-full btn btn-primary mt-[14px]">
@@ -33,8 +33,8 @@
 </template>
 <script>
 export default {
-  // middleware: 'auth',
-  // layout: 'dashboard'
+  middleware: 'auth',
+  layout: 'dashboard'
   data(){
     return{
       company:[],

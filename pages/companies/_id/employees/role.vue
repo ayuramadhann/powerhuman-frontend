@@ -20,14 +20,14 @@
             <div class="form-group">
                 <label for="" class="text-grey">Select Role</label>
                 <p v-if="$fetchState.pending" >Fetching roles...</p>
-<!-- 
+
                 <select v-else  name="roles" :value="role_id" @change="updateRoleId" id="" class="appearance-none input-field form-icon-chevron_down">
                     <option :value="role.id" v-for="role in roles.data.result.data" value="">{{role.name}}</option>
-                </select> -->
-
-                <select name="" id="" class="appearance-none input-field form-icon-chevron_down">
-                    <option value="" selected>Product Designer</option>
                 </select>
+
+                <!-- <select name="" id="" class="appearance-none input-field form-icon-chevron_down">
+                    <option value="" selected>Product Designer</option>
+                </select> -->
             </div>
 
             <!-- Responsibilities -->
@@ -35,7 +35,7 @@
                 <label for="" class="text-grey">
                     Responsibilities
                 </label>
-                <!-- <div class="flex flex-col gap-4 mt-[10px]">
+                <div class="flex flex-col gap-4 mt-[10px]">
                 <p v-if="$fetchState.pending" >Fetching responsibility...</p>
                     <div v-else v-for="responsibility in responsibilities" class="flex items-start md:items-center gap-[6px]">
                         <img src="/assets/svgs/ic-check-circle.svg" alt="">
@@ -43,7 +43,7 @@
                             {{ responsibility.name }}
                         </span>
                     </div>
-                </div> -->
+                </div>
             </section>
             <NuxtLink :to="{name:'companies-id-employees-team'}" class="w-full btn btn-primary mt-[14px]">
         Continue
@@ -53,7 +53,7 @@
 </template>
 <script>
 export default {
-//   middleware: 'auth',
+  middleware: 'auth',
   layout: 'form',
    data() {
         return {

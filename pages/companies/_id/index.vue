@@ -173,6 +173,6 @@
 <script>
 export default {
     layout: 'dashboard',
-    // middleware: 'auth'
+    middleware: 'auth'
 }
 </script>

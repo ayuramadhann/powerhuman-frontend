@@ -90,7 +90,7 @@
 
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:gap-10 lg:gap-3">
                 <!-- Card -->
-                <!-- <p v-if="$fetchState.pending" >Fetching employees...</p>
+                <p v-if="$fetchState.pending" >Fetching employees...</p>
                 <div v-else class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0"
                 v-for="employee in employees.data.result.data"
                 >
@@ -109,8 +109,8 @@
                     <a v-else class="mt-[30px] text-success flex items-center gap-[6px]">
                         Verified Now
                     </a>
-                </div> -->
-                <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
+                </div>
+                <!-- <div class="items-center card py-6 md:!py-10 md:!px-[38px] !gap-y-0">
                     <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
                     <img src="/assets/images/user-f-1.png" width="70" alt="">
                     <div class="mt-6 mb-1 font-semibold text-center text-dark">
@@ -123,7 +123,7 @@
                         <img src="/assets//svgs/ic-check-circle.svg" alt="">
                         Verified
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -131,7 +131,7 @@
 </template>
 <script>
   export default {
-    // middleware: 'auth',
+    middleware: 'auth',
     layout: 'dashboard',
     data(){
         return{
