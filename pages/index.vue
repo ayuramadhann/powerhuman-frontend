@@ -34,7 +34,7 @@
 <script>
 export default {
   middleware: 'auth',
-  layout: 'dashboard'
+  layout: 'dashboard',
   data(){
     return{
       company:[],
